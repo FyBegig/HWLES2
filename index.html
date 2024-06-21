@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It-incubator precourse</title>
+</head>
+<body>
+    <!-- ЗАДАНИЕ -->
+    <!-- Необходимо создать html-элементы там, где это нужно, в соответствии с правилами семантической разметки -->
+    <!-- ⚠️ Атрибут data-cy удалять нельзя! Он учавствует в проверке. Если его удалить, тесты не пройдут. -->
+
+    <header>
+        <span>IT-INCUBATOR</span>
+    </header>
+
+    <section data-cy="hw1-section-main-pre">
+        <h1>KURIN DANIIL VYCHESLAVOVICH</h1>
+        <p>Hello my name is Daniel. I live in Kazakhstan, Almaty. Graduated from college. At school I still fell in love with programming, but I immediately started learning C++, and it turned out to be a big mistake and I burned out. This year I set a goal to learn web programming.</p>
+        <img src="https://m.media-amazon.com/images/M/MV5BMzgxMmQxZjQtNDdmMC00MjRlLTk1MDEtZDcwNTdmOTg0YzA2XkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_.jpg" alt="mrrobot">
+        <!-- 1) В этом разделе создай 3 дочерних элемента: -->
+        <!-- a) Заголовок первого уровня со своим ФИО -->
+        <!-- b) Несколько строк о себе: где учишься или работаешь, хобби, увлечения. Используй тег для абзаца. Длина строки должна быть больше 50-ти симвов (пробелы и др знаки припинания тоже считаются символом) -->
+        <!-- c) Фото (или любую картинку из интернета). Не забудь добавить описание на случай, если изображение не загрузится -->
+    </section>
+
+    <section data-cy="hw1-section-about-pre">
+        <!-- 2) В этом разделе создай выпадающий список с разными городами (не меньше 3-х). Свой город сделай вторым в этом списке. С помощью специального атрибута, сделай так, чтобы твой город всегда был выбранным по умолчанию  -->
+         <select name="" id="">
+            <option value="">Moskva</option>
+            <option value="" selected>Almaty</option>
+            <option value="">Astana</option>
+         </select>
+        <div data-cy="hw1-unordered-list-box-pre">
+            <!-- 3) В этом разделе создай 2 дочерних элемента: -->
+            <h2>Series</h2>
+            <ul>
+                <li>Stranger Things</li>
+                <li>MrRobot</li>
+                <li>Police From Rublevka</li>
+            </ul>
+            <!-- a) Заголовок 2-го уровня (любимые книги/фильмы/блюда/страны... и т.п.) -->
+            <!-- b) Маркированный список. В списке должно быть не менее 3-х элементов -->
+        </div>
+        <div data-cy="hw1-ordered-list-box-pre">
+            <!-- 3) В этом разделе создай 2 дочерних элемента: -->
+            <h2>Food</h2>
+            <ul>
+                <li>chicken</li>
+                <li>Meat</li>
+                <li>Coffee)</li>
+            <!-- a) Заголовок 2-го уровня с другим названием (любимые книги/фильмы/блюда/страны... и т.п.) -->
+            <!-- b) Нумерованный (упорядоченный) список. В списке должно быть не менее 3-х элементов -->
+        </div>
+        <div data-cy="hw1-skills-box-pre">
+            <h2>Мои скиллы</h2>
+            <!-- 4) Здесь создай несколько чекбоксов с подписью (не меньше 3-х). 
+                - В подписи укажи названия любых тем по верстке (все, что знаешь или слышал). 
+                - Каждый чекбокс должен быть связан со своей подписью. Для этого чекбокс должен находиться в элементе для подписи
+                - Отметь "галочкой" (с помощью специального атрибута) темы, которые ты уже знаешь. -->
+                <label for="css">
+                    <input type="checkbox" name="css" id="css">
+                    css
+                </label>
+                <label for="js">
+                    <input type="checkbox" name="js" id="js">
+                    js
+                </label>
+                <label for="html">
+                    <input type="checkbox" name="html" id="html" checked>
+                    html
+                </label>
+                
+        </div>
+        <!-- 5) Создай здесь однострочное поле для ввода текста с подсказкой "Новый скилл", которая исчезает, когда начинаешь что-то печатать (для подсказки есть специальный атрибут) -->
+         <textarea placeholder="Новый скилл"></textarea>
+        <!-- 6) Создай здесь кнопку “Добавить” -->
+         <button>Добавить</button>
+        <!-- 7) Добавь горизонтальную линию (для этого есть специальный тег) -->
+         <hr>
+        
+        <table data-cy="hw-about-table-pre" border="1">
+            
+            <!-- 8) В таблице сделай 5 строк и 3 столбца. 
+                        - В первой строке ячейки заголовков, в остальных обычные ячейки
+                        - Добавь границы для всей таблицы с помощью специального атрибута border="". Он устарел, но работает
+                        - В последнем ряду первая ячейка должна занимать все свободное место по горизонтали (ширине). Таблицу можно заполнять любыми данными -->
+                        <tr>
+                            <th>tech</th>
+                            <th>js</th>
+                            <th>css</th>
+                        </tr>
+                        <tr>
+                            <td>skill</td>
+                            <td>practice</td>
+                            <td>theory</td>
+                        </tr>
+                        <tr>
+                            <td>homeworck</td>
+                            <td>robot</td>
+                            <td>mentor</td>
+                        </tr>
+                        <tr>
+                            <td>location</td>
+                            <td>kz</td>
+                            <td>ru</td>
+                        </tr>
+                        <tr>
+                            <td>certificate</td>
+                            <td>yes</td>
+                            <td>no</td>
+                        </tr>
+        </table>
+    </section>
+    <footer data-cy="hw-footer-pre">
+        <!-- 9) Создай здесь ссылку на наш сайт https://it-incubator.io/ (текст ссылки должен быть it-incubator) -->
+        <a href="https://it-incubator.io/">it-incubator</a>
+    </footer>
+</body>
+</html>
